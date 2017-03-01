@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <style>
+        @media screen and (max-width: 321px) {
+            body {
+                font-size:16px
+            }
+        }
+
+        @media screen and (min-width: 321px) and (max-width:400px) {
+            body {
+                font-size:17px
+            }
+        }
+
+        @media screen and (min-width: 400px) {
+            body {
+                font-size:19px
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+
+<script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    // iphone6设计稿,so 除以7.5 如果是iphone5 则除以6.4  然后布局中量出区块宽度设置为  宽度px/100 rem(如200px的盒子,就设置.box{width:2rem})
+</script>
+</body>
+</html>
